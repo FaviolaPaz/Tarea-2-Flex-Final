@@ -1,0 +1,150 @@
+$font-stack: sans-serif;
+$font-primary-color: #EFEFEF;
+$navbar-bgcolor:#112B3C;
+$font-secondary-color:black;
+$services-bgcolor: #205375;
+$footer-bgcolor:#F66B0E;
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font: 100% $font-stack;
+    color: $font-primary-color;
+  }
+
+.navbar {
+    background-color: $navbar-bgcolor;
+    margin: 0;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar__logo {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    flex-grow: 6;
+}
+
+[class ^="navbar__list"]{
+        list-style: none;
+        margin-right: 2rem;
+        a {
+            text-decoration: none;
+            color: white;
+        } 
+    }
+
+.navbar__list:first-child {
+    margin-right: auto;
+    margin-left: 2rem;
+}
+
+// .container {
+//     height: 100vh;
+// }
+
+.welcome {
+    height: 150px;
+    background-color: $font-primary-color;
+    color: $font-secondary-color;
+    margin: none;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome__title {
+    font-size: 30px;
+    display: flex;
+    align-content: center;
+}
+
+.welcome__p{
+    font-size: 20px;
+    
+}
+
+.services { 
+    background-color: $services-bgcolor;
+    display: flex;
+    flex-direction: row;
+    justify-content : center;
+    align-items : center;
+}
+
+[class ^="service__*"]{
+    border-right: 5px solid white;
+    display: flex;
+    justify-content : center;
+    align-items : center;
+}
+
+.services__img {
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    // justify-content: center;
+}
+
+.service__h5 {
+    padding: 10px;
+    font-size: 18px;
+    // display: flex;
+    // justify-content: center;
+}
+
+.services__p {
+    padding: 10px;
+    // display: flex;
+    // // text-align: center;
+}
+
+.footer {
+    height: 50px;
+    background-color: $footer-bgcolor;
+    color: $font-primary-color;
+    margin: none;
+    padding: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer__p {
+    padding: 10px;
+    font-size: 18px;
+    color: $font-secondary-color;
+    display: flex;
+    flex-grow: 4;
+}
+
+.footer__social {
+    list-style: none;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.footer__list {
+    list-style: none;
+    margin-right: 2rem;
+}
+
+.footer__img {
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+}
