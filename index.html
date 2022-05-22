@@ -5,44 +5,60 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
         <!-- <link rel="stylesheet" href="./styles.css"> -->
         <title>Tarea2</title>
+        <link rel="stylesheet"  type="text/css" href="slick/slick.css" />
+        <link rel="stylesheet"  type="text/css" href="slick/slick-theme.css" />
         <link rel="stylesheet"  type="text/css" href="css/main.css" />
+
     </head>
     <body>   
         <header>
-        <navbar>
-            <ul class="navbar">
-                <li class="navbar__list">
-                    <img class="navbar__logo" src="./img/logo.png" alt="logo">
-                </li>
-                <li class="navbar__list">
-                    <a href="#home">Home</a>
-                </li>
-                <li class="navbar__list">
-                    <a href="#home">About</a>
-                </li>
-                <li class="navbar__list">
-                    <a href="#home">Services</a>
-                </li>
-                <li class="navbar__list">
-                    <a href="#home">Portfolio</a>
-                </li>
-                <li class="navbar__list">
-                    <a href="#home">Pages</a>
-                </li>
-                <li class="navbar__list">
-                    <a href="#home">Contact</a>
-                </li>
-            </ul>
-        </navbar>
+            <navbar>
+                <ul class="navbar">
+                    <li class="navbar__list__1">
+                        <img class="navbar__logo" src="./img/logo.png" alt="logo">
+                    </li>
+                    <li class="navbar__list__2">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="navbar__list__3">
+                        <a href="#home">About</a>
+                    </li>
+                    <li class="navbar__list__4">
+                        <a href="#home">Services</a>
+                    </li>
+                    <li class="navbar__list__5">
+                        <a href="#home">Portfolio</a>
+                    </li>
+                    <li class="navbar__list__6">
+                        <a href="#home">Pages</a>
+                    </li>
+                    <li class="navbar__list__7">
+                        <a href="#home">Contact</a>
+                    </li>
+                </ul>
+            </navbar>
         </header>
+
+        <!-- Carousel -->
+        <div class="carousel">
+            <div>
+                <img class="carousel__img" alt="carousel1" src="img/carrusel-1.jpg">
+            </div>
+            <div>
+                <img class="carousel__img" alt="carousel2" src="img/carrusel-2.jpg">
+            </div>
+            <div>
+                <img class="carousel__img" alt="carousel3" src="img/carrusel-3.jpg">
+            </div>
+        </div>
 
         <!-- Container -->
         <div class="container">
  
             <!-- Welcome -->
-
             <div class="welcome">
                 <div class="welcome__title">
                     <h3>Welcome</h3>
@@ -55,41 +71,43 @@
             </div>
 
             <!-- Services -->
-
             <div class="services">
                 <div class="service__1">
-                    <div class="services__img">
-                        <img alt="management" src="img/management.png">
+                    <div class="service__flex">  
+                        <img class="services__img" alt="management" src="img/management.png">
+                        <h5 class="service__h5">MANAGEMENT</h5>    
+                        <p class="services__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
-                    <h5 class="service__h5">MANAGEMENT</h5>
-                    <p class="services__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
-
                 <div class="service__2">
-                    <img class="services__img" alt="planning" src="img/planning.png"> 
-                    <h5 class="service__h5">PLANNING</h5>
-                    <p class="services__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div class="service__flex">  
+                        <img class="services__img" alt="planning" src="img/planning.png">
+                        <h5 class="service__h5">PLANNING</h5>    
+                        <p class="services__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>  
                 </div>
-
                 <div class="service__3">
-                    <img class="services__img" alt="marketing" src="img/marketing.png"> 
-                    <h5 class="service__h5">MARKETING</h5>
-                    <p class="services__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div class="service__flex">  
+                        <img class="services__img" alt="marketing" src="img/marketing.png">
+                        <h5 class="service__h5">MARKETING</h5>    
+                        <p class="services__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>  
                 </div>
-
                 <div class="service__4">
-                    <img class="services__img" alt="reports" src="img/reports.png"> 
-                    <h5 class="service__h5">REPORTS</h5>
-                    <p class="services__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>            
+                    <div class="service__flex">  
+                        <img class="services__img" alt="reports" src="img/reports.png">
+                        <h5 class="service__h5">REPORTS</h5>    
+                        <p class="services__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>  
+                </div>    
             </div>
         </div>
 
@@ -133,6 +151,47 @@
             
 
         </footer>
+
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).on('ready', function(){
+                $('.carousel').slick({
+                    dots: true,
+                    infinite: true,
+                    slidesToShow: 1,    
+                    slidesToScroll: 1,
+                    accessibility: true,
+                    adaptiveHeight: true,
+                    autoplay: true,
+                    responsive: [{
+
+                        breakpoint: 1024,
+                        settings: {
+                        slidesToShow: 1,
+                        infinite: true
+                        }
+
+                        }, {
+
+                        breakpoint: 600,
+                        settings: {
+                        slidesToShow: 1,
+                        dots: true
+                        }
+
+                        }, {
+
+                        breakpoint: 300,
+                        settings: "unslick" // destroys slick
+
+                        }]
+                });
+            });
+        </script>
+
 
     </body>
 </html>
